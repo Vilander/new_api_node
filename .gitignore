@@ -1,0 +1,50 @@
+# Arquivo .gitignore para projetos Node.js
+
+### Dependências ###
+# Este é o diretório onde todos os pacotes npm/yarn/pnpm são instalados.
+# Ele pode ficar muito grande e deve ser gerado localmente com `npm install`.
+node_modules/
+.pnpm-store/
+
+### Logs ###
+# Arquivos de log gerados pelo npm ou pela sua aplicação.
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Arquivos de Ambiente (MUITO IMPORTANTE) ###
+# Nunca envie seus segredos (chaves de API, senhas de banco) para o repositório.
+# O arquivo .env.example (ou similar) DEVE ser comitado.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+### Diretórios de Build e Produção ###
+# Arquivos gerados pelo processo de build (ex: TypeScript, Webpack, Babel).
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+### Cache de Pacotes e outros ###
+.npm/
+.yarn/
+*.tsbuildinfo
+
+### Arquivos do Sistema Operacional ###
+.DS_Store
+Thumbs.db
+
+### Arquivos de IDE (Editores de Código) ###
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
